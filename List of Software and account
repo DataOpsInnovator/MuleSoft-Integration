@@ -29,7 +29,7 @@ https://developer.salesforce.com/
 Learning: https://trailhead.salesforce.com/?utm_source=google_sem&utm_medium=paid&utm_campaign=13441323065&utm_content=124770770553&utm_keyword=trailhead&gclid=CjwKCAjw3MSHBhB3EiwAxcaEuxQCOQMPW8TIVYfDzDMZaRwVmzfO5f6r6DqC26wWjM3POBrWNM8rYxoCIAAQAvD_BwE&gclsrc=aw.ds
 
 #SMS
-https://authkey.io/.   7842545272 - Anuradha 
+https://authkey.io/
 
 curl --location --request GET 'https://api.authkey.io/request?authkey=fe6b9d0d131dd433&mobile=56240862&country_code=852&sid=1716&name=Twinkle&otp=1234'
 
