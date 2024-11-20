@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "e894381a-b517-46df-98c1-d83c4f52c7e3",
+		"name": "Customer-Onbording",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SAPI",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "/customers/registration",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registrationRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"10000999\",\n    \"password\": \"sdkhjfd\",\n    \"acceptDataPolicy\": true,\n    \"recieveNews\": true,\n    \"acceptPIC\": true,\n    \"locale\": \"en\",\n    \"captchatoken\": \"weu8iuehfew8fyiushdfsiuehfd8sed\",\n    \"recieveClaimsettle\": true\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:8081/api/customers/registration",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"customers",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/customersState",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"customerStateRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"86576547\",\n    \"password\": \"sdkhjfd\",\n    \"status\": true\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "customer-sapi-app-v2.us-e2.cloudhub.io:80/api/customerState",
+									"host": [
+										"customer-sapi-app-v2",
+										"us-e2",
+										"cloudhub",
+										"io"
+									],
+									"port": "80",
+									"path": [
+										"api",
+										"customerState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/verification",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"verificationRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"10000999\",\n    \"message\": \"12345\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:8081/api/customerState",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"customerState"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PAPI",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "/customersState",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"customerStateRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"86576547\",\n    \"password\": \"sdkhjfd\",\n    \"status\": true\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "customer-papi-app-v2.us-e2.cloudhub.io/api/customerState",
+									"host": [
+										"customer-papi-app-v2",
+										"us-e2",
+										"cloudhub",
+										"io"
+									],
+									"path": [
+										"api",
+										"customerState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/verification Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"verificationRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"7411764131\",\n    \"messageContent\": \"12345\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:8082/api/verification",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"verification"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/customers/registration",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registrationRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"10000999\",\n    \"password\": \"sdkhjfd\",\n    \"acceptDataPolicy\": true,\n    \"recieveNews\": true,\n    \"acceptPIC\": true,\n    \"locale\": \"en\",\n    \"captchatoken\": \"weu8iuehfew8fyiushdfsiuehfd8sed\",\n    \"recieveClaimsettle\": true\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:8082/api/customers/registration",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"customers",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "XPAPI",
+			"item": [
+				{
+					"name": "Customer",
+					"item": [
+						{
+							"name": "/customers/registration",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-cms-transactionId",
+										"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+										"type": "text"
+									},
+									{
+										"key": "clientId",
+										"value": "sdfkjahsrjdhfgjhsd",
+										"type": "text"
+									},
+									{
+										"key": "clientSecret",
+										"value": "dafsvsdgfvsdfdshgf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registrationRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"10000999\",\n    \"password\": \"sdkhjfd\",\n    \"acceptDataPolicy\": true,\n    \"recieveNews\": true,\n    \"acceptPIC\": true,\n    \"locale\": \"en\",\n    \"captchatoken\": \"weu8iuehfew8fyiushdfsiuehfd8sed\",\n    \"recieveClaimsettle\": true\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://0.0.0.0:8082/api/customers/registration",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"customers",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Other",
+			"item": [
+				{
+					"name": "https://api.authkey.io/request?authkey=fe6b9d0d131dd433&mobile=56240862&country_code=852&sid=1716&name=Twinkle&otp=1234",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.authkey.io/request?authkey=fe6b9d0d131dd433&mobile=56240862&country_code=852&sid=1716&name=Twinkle&otp=1234",
+							"protocol": "https",
+							"host": [
+								"api",
+								"authkey",
+								"io"
+							],
+							"path": [
+								"request"
+							],
+							"query": [
+								{
+									"key": "authkey",
+									"value": "fe6b9d0d131dd433"
+								},
+								{
+									"key": "mobile",
+									"value": "56240862"
+								},
+								{
+									"key": "country_code",
+									"value": "852"
+								},
+								{
+									"key": "sid",
+									"value": "1716"
+								},
+								{
+									"key": "name",
+									"value": "Twinkle"
+								},
+								{
+									"key": "otp",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/verification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-cms-transactionId",
+								"value": "hdsfhjdh-jxbv859-sjdf7643-3746bbd334",
+								"type": "text"
+							},
+							{
+								"key": "clientId",
+								"value": "sdfkjahsrjdhfgjhsd",
+								"type": "text"
+							},
+							{
+								"key": "clientSecret",
+								"value": "dafsvsdgfvsdfdshgf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"verificationRequest\": {\n    \"contactType\": \"mobile\",\n    \"countryCode\": \"+91\",\n    \"mobile\": \"7411764131\",\n    \"messageContent\": \"https://facebook.com\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8081/api/verification",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"verification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

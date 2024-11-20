@@ -1,0 +1,59 @@
+Software 
+1. Anypoint platform account - Today  - Done
+2. Anypoint studio software - Done
+3. Git repository - Done (kumarmuletraining1@gmail.com )
+4. Git Desktop - Done
+5. Jira account (Trail - 6 , Agile approach for creation of Story , Bug ) 
+6. Postman 
+7. Maven 
+8. Salesforce Account 
+9. Remote mysql Account
+
+#Anypoint platform
+https://anypoint.mulesoft.com/login/
+
+Microsoft Authenticator
+
+#Mysql 
+https://remotemysql.com/
+
+#Jira :
+https://start.atlassian.com/
+
+#jitHub
+github.com
+
+#Salesforcce
+https://developer.salesforce.com/ 
+
+Learning: https://trailhead.salesforce.com/?utm_source=google_sem&utm_medium=paid&utm_campaign=13441323065&utm_content=124770770553&utm_keyword=trailhead&gclid=CjwKCAjw3MSHBhB3EiwAxcaEuxQCOQMPW8TIVYfDzDMZaRwVmzfO5f6r6DqC26wWjM3POBrWNM8rYxoCIAAQAvD_BwE&gclsrc=aw.ds
+
+#SMS
+https://authkey.io/.   7842545272 - Anuradha 
+
+curl --location --request GET 'https://api.authkey.io/request?authkey=fe6b9d0d131dd433&mobile=56240862&country_code=852&sid=1716&name=Twinkle&otp=1234'
+
+#Encryption jar
+https://docs.mulesoft.com/downloads/mule-runtime/4.2/secure-properties-tool.jar
+
+java -cp secure-properties-tool.jar com.mulesoft.tools.SecurePropertiesTool \
+string \
+encrypt \
+Blowfish \
+CBC \
+CustomerModule123 \
+"gbXxfkZQtAdeDaqhDkjY7ge8"
+
+
+java -cp secure-properties-tool.jar com.mulesoft.tools.SecurePropertiesTool \
+string \
+encrypt \
+Blowfish \
+CBC \
+CustomerModule123 \
+"@Ravi2510"
+
+
+
+
+http://security-update-site-1.4.s3.amazonaws.com/

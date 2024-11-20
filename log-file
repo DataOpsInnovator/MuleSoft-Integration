@@ -1,0 +1,92 @@
+-----------Start Log--------------------
+
+%dw 2.0 
+output application/json indent = false 
+--- 
+{ 	
+    TimeStamp: vars.requestTime, 
+    transactionId: vars.headers.'x-cms-transactionId',
+    AppName: app.name, 	
+    FlowName: flow.name, 	
+    BusinessProcessName:  "Customer Registration", 	
+    Category:  "Customer", 	
+    OriginatingApplication:  "Process API", 	
+    DesinationApplication:  "Salesforce", 	
+    CustomerId: "NA", 	
+    txnState:  "START " 
+}
+
+-----------END Log--------------------
+%dw 2.0
+output application/json indent = false 
+--- 
+{ 	
+    TimeStamp: now(), 	
+    transactionId: vars.headers.'x-cms-transactionId', 	
+    AppName: app.name, 	
+    FlowName: flow.name, 	
+    BusinessProcessName:  "Customer Registration", 	
+    Category:  "Customer", 	
+    OriginatingApplication:  "Process API", 	
+    DesinationApplication:  "Salesforce", 	
+    CustomerId: "NA", 	
+    txnState:  "END" 
+}
+
+-----------Request Log--------------------
+%dw 2.0
+output application/json indent = false  
+---  
+{  	
+    TimeStamp: now(), 	
+    transactionId: vars.headers.'x-cms-transactionId', 	
+    AppName: app.name, 	
+    FlowName: flow.name, 	
+    BusinessProcessName:  "Customer Registration", 	
+    Category:  "Customer", 	
+    OriginatingApplication:  "Process API", 	
+    DesinationApplication:  "Salesforce", 	
+    CustomerId: "NA", 	
+    txnState:  "SFDC Request" 
+}
+
+-----------Response Log--------------------
+%dw 2.0
+output application/json indent = false  
+---  
+{  	
+    TimeStamp: now(), 	
+    transactionId: vars.headers.'x-cms-transactionId', 	
+    AppName: app.name, 	
+    FlowName: flow.name, 	
+    BusinessProcessName:  "Customer Registration", 	
+    Category:  "Customer", 	
+    OriginatingApplication:  "Process API", 	
+    DesinationApplication:  "Salesforce", 	
+    CustomerId: "NA", 	
+    txnState:  "SFDC Response" 
+}
+
+-----------Error Log--------------------
+
+%dw 2.0
+output application/json indent = false  
+---  
+{  	
+    TimeStamp: now(), 	
+    transactionId: vars.headers.'x-cms-transactionId', 	
+    AppName: app.name, 	
+    FlowName: flow.name, 	
+    BusinessProcessName:  "Customer Registration", 	
+    Category:  "Customer", 	
+    OriginatingApplication:  "Process API", 	
+    DesinationApplication:  "Salesforce", 	
+    CustomerId: "NA", 	
+    txnState:  "ERROR" 
+}
+
+
+
+
+		
+		
