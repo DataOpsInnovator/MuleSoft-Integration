@@ -83,7 +83,7 @@ This section provides guidelines to ensure your MuleSoft projects are efficient,
 
 1. **Clone the Repository**  
  
-     - git clone https://github.com/DataOpsInnovator/MuleSoft-Integration.git
+     - git clone https://github.com/DataOpsInnovator/MuleSoft Integration Solutions.git
 
 2. Set up Anypoint Platform
 
